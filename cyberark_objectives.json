@@ -1,0 +1,264 @@
+{
+  "exam": "CyberArk Defender",
+  "exam_name": "CyberArk Defender - PAM",
+  "version": "2024-01",
+  "last_verified": "2026-05-25",
+  "source": "https://www.cyberark.com/services/training-certification/",
+  "guardian_note": "If CyberArk updates these objectives, please submit a PR updating this file. Always verify against the official CyberArk certification page before your exam date.",
+  "domains": [
+    {
+      "id": "domain-1",
+      "name": "PAM Fundamentals",
+      "weight": "20-25%",
+      "guardian_agent": "PAMAgent",
+      "objectives": [
+        {
+          "id": "1.1",
+          "objective": "Understand Privileged Access Management concepts",
+          "topics": [
+            "Define privileged accounts and their risks",
+            "Explain the principle of least privilege",
+            "Describe the attack chain and how PAM breaks it",
+            "Identify types of privileged accounts (human, service, application)"
+          ],
+          "cyberark_component": "Conceptual",
+          "defender_weight": "high"
+        },
+        {
+          "id": "1.2",
+          "objective": "Understand CyberArk solution architecture",
+          "topics": [
+            "Describe the CyberArk Vault architecture",
+            "Explain the role of CPM, PSM, and PVWA",
+            "Understand the DR Vault and its purpose",
+            "Describe CyberArk Cloud vs Self-Hosted deployment"
+          ],
+          "cyberark_component": "Architecture",
+          "defender_weight": "high"
+        },
+        {
+          "id": "1.3",
+          "objective": "Understand CyberArk security layers",
+          "topics": [
+            "Explain encryption at rest and in transit",
+            "Describe the Master Policy and its role",
+            "Understand safe permissions and ownership",
+            "Explain the concept of dual control"
+          ],
+          "cyberark_component": "Security",
+          "defender_weight": "medium"
+        }
+      ]
+    },
+    {
+      "id": "domain-2",
+      "name": "CyberArk Vault Administration",
+      "weight": "25-30%",
+      "guardian_agent": "PAMAgent",
+      "objectives": [
+        {
+          "id": "2.1",
+          "objective": "Configure and manage the CyberArk Vault",
+          "topics": [
+            "Install and configure the CyberArk Vault",
+            "Configure Vault parameters and settings",
+            "Manage Vault administrators and auditors",
+            "Configure DR Vault replication"
+          ],
+          "cyberark_component": "Vault",
+          "defender_weight": "high"
+        },
+        {
+          "id": "2.2",
+          "objective": "Create and manage safes",
+          "topics": [
+            "Create and configure safes",
+            "Assign safe members and permissions",
+            "Configure safe retention policies",
+            "Implement safe ownership model"
+          ],
+          "cyberark_component": "Vault",
+          "defender_weight": "high"
+        },
+        {
+          "id": "2.3",
+          "objective": "Onboard and manage privileged accounts",
+          "topics": [
+            "Manually onboard privileged accounts",
+            "Use Auto-Detection for account discovery",
+            "Configure account properties and platforms",
+            "Manage account reconciliation"
+          ],
+          "cyberark_component": "Vault",
+          "defender_weight": "high"
+        },
+        {
+          "id": "2.4",
+          "objective": "Configure and manage platforms",
+          "topics": [
+            "Understand platform types and usage",
+            "Configure platform settings",
+            "Create custom platforms",
+            "Manage platform policies"
+          ],
+          "cyberark_component": "Vault",
+          "defender_weight": "medium"
+        }
+      ]
+    },
+    {
+      "id": "domain-3",
+      "name": "Central Policy Manager (CPM)",
+      "weight": "15-20%",
+      "guardian_agent": "PAMAgent",
+      "objectives": [
+        {
+          "id": "3.1",
+          "objective": "Configure and manage CPM",
+          "topics": [
+            "Install and configure CPM",
+            "Configure CPM settings and parameters",
+            "Manage CPM user permissions",
+            "Monitor CPM health and status"
+          ],
+          "cyberark_component": "CPM",
+          "defender_weight": "high"
+        },
+        {
+          "id": "3.2",
+          "objective": "Implement credential rotation",
+          "topics": [
+            "Configure password rotation policies",
+            "Set rotation frequency per account type",
+            "Configure immediate change on release",
+            "Troubleshoot failed password changes"
+          ],
+          "cyberark_component": "CPM",
+          "defender_weight": "high"
+        },
+        {
+          "id": "3.3",
+          "objective": "Configure reconcile accounts",
+          "topics": [
+            "Understand reconcile account purpose",
+            "Configure reconcile account per platform",
+            "Troubleshoot reconcile failures",
+            "Monitor reconcile activity"
+          ],
+          "cyberark_component": "CPM",
+          "defender_weight": "medium"
+        }
+      ]
+    },
+    {
+      "id": "domain-4",
+      "name": "Privileged Session Manager (PSM)",
+      "weight": "20-25%",
+      "guardian_agent": "PAMAgent",
+      "objectives": [
+        {
+          "id": "4.1",
+          "objective": "Configure and manage PSM",
+          "topics": [
+            "Install and configure PSM",
+            "Configure PSM settings and parameters",
+            "Manage PSM connections",
+            "Configure PSM for SSH and RDP"
+          ],
+          "cyberark_component": "PSM",
+          "defender_weight": "high"
+        },
+        {
+          "id": "4.2",
+          "objective": "Implement session recording and monitoring",
+          "topics": [
+            "Configure session recording settings",
+            "Enable keystroke logging",
+            "Configure live session monitoring",
+            "Manage session recording storage"
+          ],
+          "cyberark_component": "PSM",
+          "defender_weight": "high"
+        },
+        {
+          "id": "4.3",
+          "objective": "Configure PSM workflows",
+          "topics": [
+            "Configure dual control for PSM sessions",
+            "Implement session request and approval",
+            "Configure time-limited access",
+            "Manage PSM connection components"
+          ],
+          "cyberark_component": "PSM",
+          "defender_weight": "medium"
+        }
+      ]
+    },
+    {
+      "id": "domain-5",
+      "name": "PVWA and Access Control",
+      "weight": "10-15%",
+      "guardian_agent": "PAMAgent",
+      "objectives": [
+        {
+          "id": "5.1",
+          "objective": "Configure and manage PVWA",
+          "topics": [
+            "Install and configure PVWA",
+            "Configure authentication methods",
+            "Manage PVWA users and groups",
+            "Configure PVWA settings and policies"
+          ],
+          "cyberark_component": "PVWA",
+          "defender_weight": "medium"
+        },
+        {
+          "id": "5.2",
+          "objective": "Implement access workflows",
+          "topics": [
+            "Configure dual control workflows",
+            "Implement one-time password access",
+            "Configure access request and approval",
+            "Manage exclusive access settings"
+          ],
+          "cyberark_component": "PVWA",
+          "defender_weight": "high"
+        },
+        {
+          "id": "5.3",
+          "objective": "Monitor and audit privileged access",
+          "topics": [
+            "Review PVWA audit logs",
+            "Generate privileged access reports",
+            "Monitor suspicious activity",
+            "Configure alerts and notifications"
+          ],
+          "cyberark_component": "PVWA",
+          "defender_weight": "medium"
+        }
+      ]
+    }
+  ],
+  "exam_tips": [
+    "Domain 2 (Vault Administration) carries the most weight — know safe permissions deeply",
+    "PSM session recording is frequently tested — know the configuration steps",
+    "CPM credential rotation troubleshooting is a common exam topic",
+    "Know the difference between CPM, PSM and PVWA — what each component does",
+    "Dual control workflow is tested in both PSM and PVWA domains",
+    "Understand the Master Policy and how it interacts with platform policies",
+    "Know what happens when CPM fails to rotate a password",
+    "Break glass accounts are tested — know when and how to use them"
+  ],
+  "recommended_labs": [
+    "Create a safe and onboard a Windows domain admin account",
+    "Configure CPM rotation for a privileged account",
+    "Connect to a target server via PSM and review the session recording",
+    "Configure dual control workflow for a high-risk account",
+    "Run a privileged access report in PVWA"
+  ],
+  "gideon_integration": {
+    "note": "Use GIDEON to generate PBQ practice questions for each objective",
+    "repo": "https://github.com/siriusbkid-commits/gideon-pbq-generator",
+    "tip": "After implementing each CyberArk component, generate a GIDEON PBQ on that topic to test your understanding"
+  }
+}
