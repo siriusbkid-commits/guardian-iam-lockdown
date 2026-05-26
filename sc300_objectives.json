@@ -75,7 +75,7 @@
     {
       "id": "domain-2",
       "name": "Implement Authentication and Access Management",
-      "weight": "20-25%",
+      "weight": "25-30%",
       "guardian_agent": "PIMAgent",
       "objectives": [
         {
@@ -205,7 +205,7 @@
     {
       "id": "domain-4",
       "name": "Plan and Automate Identity Governance",
-      "weight": "20-25%",
+      "weight": "25-30%",
       "guardian_agent": "PIMAgent",
       "objectives": [
         {
@@ -266,7 +266,7 @@
     }
   ],
   "exam_tips": [
-    "All four domains carry equal weight (20-25%) — study each one thoroughly",
+    "All four domains are tested but Domain 2 and Domain 4 carry the most weight (25-30%) — prioritise these",
     "PIM (Objective 4.3) appears in almost every exam — know it deeply including PIM for Groups",
     "Conditional Access (Objective 2.2) is frequently tested with scenario questions — know all controls",
     "Access Reviews (Objective 4.2) often appears as a PBQ",

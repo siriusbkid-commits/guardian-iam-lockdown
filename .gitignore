@@ -1,5 +1,6 @@
 output/
 profiles/
+study_output/
 __pycache__/
 *.pyc
 .env
