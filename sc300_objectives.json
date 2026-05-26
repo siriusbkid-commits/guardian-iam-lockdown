@@ -1,24 +1,28 @@
 {
   "exam": "SC-300",
   "exam_name": "Microsoft Identity and Access Administrator",
-  "version": "2024-11",
-  "last_verified": "2026-05-23",
+  "version": "2025-01",
+  "last_verified": "2026-05-26",
   "source": "https://learn.microsoft.com/credentials/certifications/exams/sc-300",
   "guardian_note": "If Microsoft updates these objectives, please submit a PR updating this file. Always verify against the official Microsoft Learn page before your exam date.",
   "domains": [
     {
       "id": "domain-1",
-      "name": "Implement Identities in Microsoft Entra ID",
+      "name": "Implement and Manage User Identities",
       "weight": "20-25%",
       "guardian_agent": "PIMAgent",
       "objectives": [
         {
           "id": "1.1",
-          "objective": "Implement initial configuration of Microsoft Entra ID",
+          "objective": "Configure and manage a Microsoft Entra tenant",
           "topics": [
-            "Configure and manage Microsoft Entra directory roles",
-            "Configure delegation using administrative units",
-            "Configure tenant-wide settings"
+            "Configure and manage built-in and custom Microsoft Entra roles",
+            "Recommend when to use administrative units",
+            "Configure and manage administrative units",
+            "Evaluate effective permissions for Microsoft Entra roles",
+            "Configure and manage domains in Microsoft Entra ID and Microsoft 365",
+            "Configure Company branding settings",
+            "Configure tenant properties, user settings, group settings, and device settings"
           ],
           "azure_portal_path": "Azure Portal > Microsoft Entra ID > Overview",
           "sc300_weight": "high"
@@ -29,20 +33,24 @@
           "topics": [
             "Create, configure, and manage users",
             "Create, configure, and manage groups",
-            "Configure and manage device registration",
-            "Manage licences"
+            "Manage custom security attributes",
+            "Automate bulk operations by using the Microsoft Entra admin center and PowerShell",
+            "Manage device join and device registration in Microsoft Entra ID",
+            "Assign, modify, and report on licenses"
           ],
           "azure_portal_path": "Azure Portal > Microsoft Entra ID > Users",
           "sc300_weight": "high"
         },
         {
           "id": "1.3",
-          "objective": "Implement and manage external identities",
+          "objective": "Implement and manage identities for external users and tenants",
           "topics": [
-            "Manage external collaboration settings",
-            "Invite external users",
-            "Manage external user accounts",
-            "Configure identity providers"
+            "Manage External collaboration settings in Microsoft Entra ID",
+            "Invite external users, individually or in bulk",
+            "Manage external user accounts in Microsoft Entra ID",
+            "Implement Cross-tenant access settings",
+            "Implement and manage cross-tenant synchronization",
+            "Configure external identity providers, including protocols such as SAML and WS-Fed"
           ],
           "azure_portal_path": "Azure Portal > Microsoft Entra ID > External Identities",
           "sc300_weight": "medium"
@@ -51,11 +59,13 @@
           "id": "1.4",
           "objective": "Implement and manage hybrid identity",
           "topics": [
-            "Implement and manage Microsoft Entra Connect",
-            "Implement and manage Microsoft Entra Connect Health",
-            "Implement and manage password hash synchronisation",
+            "Implement and manage Microsoft Entra Connect Sync",
+            "Implement and manage Microsoft Entra Cloud Sync",
+            "Implement and manage password hash synchronization",
             "Implement and manage pass-through authentication",
-            "Implement and manage seamless SSO"
+            "Implement and manage seamless single sign-on (SSO)",
+            "Migrate from AD FS to other authentication and authorization mechanisms",
+            "Implement and manage Microsoft Entra Connect Health"
           ],
           "azure_portal_path": "Azure Portal > Microsoft Entra ID > Microsoft Entra Connect",
           "sc300_weight": "medium"
@@ -65,145 +75,162 @@
     {
       "id": "domain-2",
       "name": "Implement Authentication and Access Management",
-      "weight": "25-30%",
+      "weight": "20-25%",
       "guardian_agent": "PIMAgent",
       "objectives": [
         {
           "id": "2.1",
-          "objective": "Plan, implement, and manage Microsoft Entra multifactor authentication (MFA)",
-          "topics": [
-            "Plan MFA deployment",
-            "Configure MFA registration policy",
-            "Configure verification methods",
-            "Implement and manage MFA settings",
-            "Manage MFA settings for users"
-          ],
-          "azure_portal_path": "Azure Portal > Microsoft Entra ID > Security > MFA",
-          "sc300_weight": "high"
-        },
-        {
-          "id": "2.2",
           "objective": "Plan, implement, and manage Microsoft Entra user authentication",
           "topics": [
-            "Implement and manage authentication methods",
+            "Plan for authentication",
+            "Implement and manage authentication methods, including certificate-based authentication, Temporary Access Pass, OAuth 2.0 tokens, Microsoft Authenticator, and passkeys (FIDO2)",
+            "Implement and manage tenant-wide multifactor authentication (MFA) settings",
+            "Configure and deploy self-service password reset (SSPR)",
             "Implement and manage Windows Hello for Business",
-            "Implement and manage password protection",
-            "Implement and manage Microsoft Entra Smart Lockout",
-            "Implement certificate-based authentication"
+            "Disable accounts and revoke user sessions",
+            "Implement and manage Microsoft Entra password protection",
+            "Enable Microsoft Entra Kerberos authentication for hybrid identities"
           ],
           "azure_portal_path": "Azure Portal > Microsoft Entra ID > Security > Authentication Methods",
           "sc300_weight": "high"
         },
         {
-          "id": "2.3",
+          "id": "2.2",
           "objective": "Plan, implement, and manage Microsoft Entra Conditional Access",
           "topics": [
             "Plan Conditional Access policies",
+            "Implement Conditional Access policy assignments",
             "Implement Conditional Access policy controls",
             "Test and troubleshoot Conditional Access policies",
             "Implement session management",
-            "Implement device compliance policies"
+            "Implement device-enforced restrictions",
+            "Implement continuous access evaluation",
+            "Configure authentication context",
+            "Implement protected actions",
+            "Create a Conditional Access policy from a template"
           ],
           "azure_portal_path": "Azure Portal > Microsoft Entra ID > Security > Conditional Access",
           "sc300_weight": "high"
         },
         {
-          "id": "2.4",
-          "objective": "Manage Microsoft Entra ID Protection",
+          "id": "2.3",
+          "objective": "Manage risk by using Microsoft Entra ID Protection",
           "topics": [
-            "Implement and manage user risk policy",
-            "Implement and manage sign-in risk policy",
-            "Implement and manage MFA registration policy",
-            "Monitor, investigate, and remediate risky users"
+            "Implement and manage user risk by using Microsoft Entra ID Protection or Conditional Access policies",
+            "Implement and manage sign-in risk by using Microsoft Entra ID Protection or Conditional Access policies",
+            "Implement and manage multifactor authentication registration by using authentication methods and registration campaigns",
+            "Monitor, investigate and remediate risky users and risky sign-ins",
+            "Monitor, investigate, and remediate risky workload identities"
           ],
           "azure_portal_path": "Azure Portal > Microsoft Entra ID > Security > Identity Protection",
           "sc300_weight": "medium"
         },
         {
-          "id": "2.5",
-          "objective": "Implement access management for Azure resources",
+          "id": "2.4",
+          "objective": "Implement Global Secure Access",
           "topics": [
-            "Assign Azure roles",
-            "Configure custom Azure roles",
-            "Implement and configure Azure role-based access control (RBAC)",
-            "Configure Azure Policy"
+            "Deploy Global Secure Access clients",
+            "Deploy and manage Private Access",
+            "Deploy and manage Internet Access",
+            "Deploy and manage Internet Access for Microsoft 365"
           ],
-          "azure_portal_path": "Azure Portal > Subscriptions > Access Control (IAM)",
+          "azure_portal_path": "Azure Portal > Global Secure Access",
           "sc300_weight": "medium"
         }
       ]
     },
     {
       "id": "domain-3",
-      "name": "Implement Access Management for Applications",
-      "weight": "15-20%",
+      "name": "Plan and Implement Workload Identities",
+      "weight": "20-25%",
       "guardian_agent": "GRCAgent",
       "objectives": [
         {
           "id": "3.1",
-          "objective": "Manage and monitor application access by using Microsoft Entra ID",
+          "objective": "Plan and implement identities for applications and Azure workloads",
           "topics": [
-            "Implement and configure consent settings",
-            "Discover and manage applications",
-            "Configure application assignments",
-            "Configure Azure AD Application Proxy"
+            "Select appropriate identities for applications and Azure workloads, including managed identities, service principals, user accounts, and managed service accounts",
+            "Create managed identities",
+            "Assign a managed identity to an Azure resource",
+            "Use a managed identity assigned to an Azure resource to access other Azure resources"
           ],
-          "azure_portal_path": "Azure Portal > Microsoft Entra ID > Enterprise Applications",
+          "azure_portal_path": "Azure Portal > Microsoft Entra ID > App Registrations",
           "sc300_weight": "medium"
         },
         {
           "id": "3.2",
           "objective": "Plan, implement, and monitor the integration of enterprise applications",
           "topics": [
-            "Configure and manage application registration",
-            "Configure authentication for applications",
-            "Implement application authorisation",
-            "Manage and monitor OAuth 2.0 permissions"
+            "Plan and implement settings for enterprise applications, including application-level and tenant-level settings",
+            "Assign appropriate Microsoft Entra roles to users to manage enterprise applications",
+            "Design and implement integration for on-premises apps by using Microsoft Entra Application Proxy",
+            "Design and implement integration for software as a service (SaaS) apps",
+            "Assign, classify, and manage users, groups, and app roles for enterprise applications",
+            "Configure and manage user and admin consent",
+            "Create and manage application collections"
+          ],
+          "azure_portal_path": "Azure Portal > Microsoft Entra ID > Enterprise Applications",
+          "sc300_weight": "medium"
+        },
+        {
+          "id": "3.3",
+          "objective": "Plan and implement app registrations",
+          "topics": [
+            "Plan for app registrations",
+            "Create app registrations",
+            "Configure app authentication",
+            "Configure API permissions",
+            "Create app roles"
           ],
           "azure_portal_path": "Azure Portal > Microsoft Entra ID > App Registrations",
           "sc300_weight": "medium"
         },
         {
-          "id": "3.3",
-          "objective": "Plan and implement application configurations",
+          "id": "3.4",
+          "objective": "Manage and monitor app access by using Microsoft Defender for Cloud Apps",
           "topics": [
-            "Implement token customisation",
-            "Implement and configure Managed Identities",
-            "Implement app roles"
+            "Configure and analyze cloud discovery results by using Defender for Cloud Apps",
+            "Configure connected apps",
+            "Implement application-enforced restrictions",
+            "Configure Conditional Access app control",
+            "Create access and session policies in Defender for Cloud Apps",
+            "Implement and manage policies for OAuth apps",
+            "Manage the Cloud app catalog"
           ],
-          "azure_portal_path": "Azure Portal > Microsoft Entra ID > App Registrations > Token Configuration",
-          "sc300_weight": "low"
+          "azure_portal_path": "Microsoft Defender for Cloud Apps > Cloud Discovery",
+          "sc300_weight": "medium"
         }
       ]
     },
     {
       "id": "domain-4",
-      "name": "Plan and Implement Identity Governance in Microsoft Entra ID",
-      "weight": "25-30%",
+      "name": "Plan and Automate Identity Governance",
+      "weight": "20-25%",
       "guardian_agent": "PIMAgent",
       "objectives": [
         {
           "id": "4.1",
-          "objective": "Plan and implement entitlement management",
+          "objective": "Plan and implement entitlement management in Microsoft Entra",
           "topics": [
             "Plan entitlements",
-            "Create and manage catalogues",
-            "Create and manage access packages",
+            "Create and configure catalogs",
+            "Create and configure access packages",
             "Manage access requests",
-            "Implement and manage terms of use"
+            "Implement and manage terms of use (ToU)",
+            "Manage the lifecycle of external users",
+            "Configure and manage connected organizations"
           ],
           "azure_portal_path": "Azure Portal > Microsoft Entra ID > Identity Governance > Entitlement Management",
           "sc300_weight": "high"
         },
         {
           "id": "4.2",
-          "objective": "Plan, implement, and manage access reviews",
+          "objective": "Plan, implement, and manage access reviews in Microsoft Entra",
           "topics": [
             "Plan for access reviews",
-            "Create and configure access reviews for groups and apps",
-            "Create and configure access reviews for Microsoft Entra roles",
+            "Create and configure access reviews",
             "Monitor access review activity",
-            "Respond to access review activity"
+            "Manually respond to access review activity"
           ],
           "azure_portal_path": "Azure Portal > Microsoft Entra ID > Identity Governance > Access Reviews",
           "sc300_weight": "high"
@@ -212,25 +239,25 @@
           "id": "4.3",
           "objective": "Plan and implement privileged access",
           "topics": [
-            "Plan and manage Azure roles in PIM",
-            "Plan and manage Microsoft Entra roles in PIM",
-            "Configure PIM settings",
-            "Assign eligible or active privileged roles",
-            "Implement PIM requests and approval process",
-            "Monitor PIM activity"
+            "Plan and manage Microsoft Entra roles in Microsoft Entra Privileged Identity Management (PIM), including settings and assignments",
+            "Plan and manage Azure resources in PIM, including settings and assignments",
+            "Plan and configure PIM for Groups",
+            "Manage the PIM request and approval process",
+            "Analyze PIM audit history and reports",
+            "Create and manage break-glass accounts"
           ],
           "azure_portal_path": "Azure Portal > Microsoft Entra ID > Identity Governance > Privileged Identity Management",
           "sc300_weight": "high"
         },
         {
           "id": "4.4",
-          "objective": "Monitor Microsoft Entra activity",
+          "objective": "Monitor identity activity by using logs, workbooks, and reports",
           "topics": [
-            "Design a strategy for monitoring Microsoft Entra ID",
-            "Review and analyse sign-in, audit, and provisioning logs",
-            "Configure diagnostic settings and log analytics",
-            "Monitor Microsoft Entra ID by using Microsoft Sentinel",
-            "Search and investigate in Microsoft Sentinel"
+            "Review and analyze sign-in, audit, and provisioning logs by using the Microsoft Entra admin center",
+            "Configure diagnostic settings, including configuring destinations such as Log Analytics workspaces, storage accounts, and Azure Event Hubs",
+            "Monitor Microsoft Entra ID by using KQL queries in Log Analytics",
+            "Analyze Microsoft Entra ID by using workbooks and reporting",
+            "Monitor and improve the security posture by using Identity Secure Score"
           ],
           "azure_portal_path": "Azure Portal > Microsoft Entra ID > Monitoring",
           "sc300_weight": "medium"
@@ -239,20 +266,30 @@
     }
   ],
   "exam_tips": [
-    "Domain 2 and Domain 4 carry the most weight — focus here first",
-    "PIM (Objective 4.3) appears in almost every exam — know it deeply",
-    "Conditional Access (Objective 2.3) is frequently tested with scenario questions",
+    "All four domains carry equal weight (20-25%) — study each one thoroughly",
+    "PIM (Objective 4.3) appears in almost every exam — know it deeply including PIM for Groups",
+    "Conditional Access (Objective 2.2) is frequently tested with scenario questions — know all controls",
     "Access Reviews (Objective 4.2) often appears as a PBQ",
+    "Global Secure Access (Objective 2.4) is new — expect questions on Private Access and Internet Access",
+    "Defender for Cloud Apps (Objective 3.4) is new — know Conditional Access app control",
+    "Workload identities (Domain 3) — know the difference between managed identities and service principals",
     "Always know the Azure portal path for each feature — exams test navigation",
     "Understand the difference between Authentication Administrator and Privileged Role Administrator",
-    "Know when to use Groups vs Administrative Units vs Roles"
+    "Know when to use Groups vs Administrative Units vs Roles",
+    "Break glass accounts (Objective 4.3) — know how to create and monitor them",
+    "KQL queries in Log Analytics (Objective 4.4) — basic query syntax is tested"
   ],
   "recommended_labs": [
-    "Configure PIM for Global Administrator role",
-    "Create a Conditional Access policy requiring MFA for admins",
+    "Configure PIM for Global Administrator role including PIM for Groups",
+    "Create a Conditional Access policy requiring MFA for admins using a template",
     "Set up an access review for a privileged role",
-    "Configure Microsoft Entra ID Protection risk policies",
-    "Create an access package with approval workflow"
+    "Configure Microsoft Entra ID Protection risk policies for users and sign-ins",
+    "Create an access package with approval workflow and terms of use",
+    "Deploy Global Secure Access client and configure Internet Access",
+    "Configure Defender for Cloud Apps and create a session policy",
+    "Create a managed identity and assign it to an Azure resource",
+    "Configure Microsoft Entra Application Proxy for an on-premises app",
+    "Monitor Identity Secure Score and implement recommendations"
   ],
   "gideon_integration": {
     "note": "Use GIDEON to generate PBQ practice questions for each objective",
