@@ -1,6 +1,8 @@
 # GUARDIAN — AI-Powered IAM Lockdown Template
 
 > *"You're already paying for it. You're just not using it."*
+> 🎓 **Learn GUARDIAN** — Full course now live on Udemy
+[GUARDIAN: Free AI IAM Security Playbook for Small Business]:https://www.udemy.com/course/guardian-free-ai-iam-security-playbook-for-small-business
 
 **GUARDIAN** is a free, open source, offline AI-powered security lockdown template generator. A team of specialist AI agents work together to produce a personalised **IAM Lockdown Playbook** — practical, step-by-step security guidance using tools you already own.
 
