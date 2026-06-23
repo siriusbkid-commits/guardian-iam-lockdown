@@ -1,6 +1,7 @@
 # GUARDIAN — AI-Powered IAM Lockdown Template
 
 > *"You're already paying for it. You're just not using it."*
+
 > 🎓 **Learn GUARDIAN** — Full course now live on Udemy
 [GUARDIAN: Free AI IAM Security Playbook for Small Business]:https://www.udemy.com/course/guardian-free-ai-iam-security-playbook-for-small-business
 
