@@ -66,7 +66,32 @@ A typical startup has:
 | 🏠 **Home** | Single user | Windows + Microsoft Account | Home Lockdown Playbook |
 | 🚀 **Startup** | 2-50 users | Microsoft 365 + Entra ID | Startup Lockdown Playbook |
 | 🏢 **SMB** | 50+ users | Entra ID + CyberArk | Enterprise Lockdown Playbook |
+## Microsoft Licensing — What You Need
 
+Understanding which Microsoft licence includes which security features is critical before implementing GUARDIAN recommendations.
+
+| Feature | Business Premium | E3 | E5 | Entra ID P2 Add-on |
+|---------|-----------------|----|----|-------------------|
+| Entra ID | P1 | P1 | P2 | P2 |
+| Conditional Access | ✅ | ✅ | ✅ | ✅ |
+| MFA | ✅ | ✅ | ✅ | ✅ |
+| PIM | ❌ | ❌ | ✅ | ✅ |
+| Identity Protection | ❌ | ❌ | ✅ | ✅ |
+| Access Reviews | ❌ | ❌ | ✅ | ✅ |
+| Microsoft Sentinel | ❌ | ❌ | ❌ | ❌ (Azure add-on) |
+
+> ⚠️ **Important:** PIM, Identity Protection, and Access Reviews require **Entra ID P2** — included in Microsoft 365 E5 or available as a standalone add-on.
+
+### The Smart Approach for Budget-Conscious Organisations
+
+You do NOT need to upgrade all users to E5 to get PIM. The recommended approach is:
+
+- **Standard users** — keep on Business Premium or E3 (Entra ID P1)
+- **Admin accounts only** — add Entra ID P2 licence ($9 USD/user/month)
+
+For a typical small business with 2-3 admin accounts this means PIM costs approximately **$18-27 USD/month** — not a full E5 upgrade for everyone.
+
+> 💡 **Check your current licence first:** Go to Microsoft 365 Admin Centre → Billing → Your Products to see what you already have. Many organisations discover they already have E5 or Business Premium licences they are not fully using.
 ---
 
 ## The Agent Team
