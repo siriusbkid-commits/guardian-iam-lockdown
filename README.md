@@ -364,6 +364,18 @@ guardian-iam-lockdown/
 ```
 
 ---
+## Acknowledgements
+
+GUARDIAN was built with the assistance of 
+**Claude (Anthropic)** — AI pair programmer, 
+research partner, and strategic advisor 
+throughout the development of this project.
+
+> *"The best use of AI is not to replace human 
+expertise but to amplify it."*
+
+[Anthropic](https://www.anthropic.com) | 
+[Claude](https://www.claude.ai)
 
 ## License
 
