@@ -308,6 +308,8 @@ Together they form a complete **IAM learning and implementation ecosystem**. �
 
 ## Professional Services
 
+> 🇸🇬 **Singapore healthcare context:** See [SINGAPORE_HEALTHCARE_IAM.md](SINGAPORE_HEALTHCARE_IAM.md)
+
 **Need GUARDIAN customised for your business?**
 
 GUARDIAN can be tailored to your specific environment, compliance requirements and existing security tools. A consultant can:
